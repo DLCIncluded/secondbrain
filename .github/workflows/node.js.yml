@@ -29,5 +29,5 @@ jobs:
       run: |
         touch .env.production
         echo API_KEY=${{ secrets.VUE_APP_BASE_URL }} >> .env.production
-        cat .env
+        cat .env.production
     - run: npm run build --if-present
