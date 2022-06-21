@@ -28,6 +28,6 @@ jobs:
     - name: 'Create env file'
       run: |
         touch .env.production
-        echo API_KEY=${{ secrets.VUE_APP_BASE_URL }} >> .env.production
+        echo VUE_APP_BASE_URL=${{ secrets.VUE_APP_BASE_URL }} >> .env.production
         cat .env.production
     - run: npm run build --if-present
